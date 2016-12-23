@@ -1,11 +1,12 @@
-安装Vundle插件
-git clone https://github.com/VundleVim/Vundle.vim.git ~/myvim/bundle/Vundle.vim
-
 创建.vim文件放置插件和配置
 mkdir ~/.vim
 
 ln -s  ~/myvim/vimrc ~/.vimrc
 ln -s ~/myvim/UltiSnips ~/.vim/UltiSnips 
+touch ~/.myvimrc
+
+安装Vundle插件
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 下载插件到本地
 vim +PluginInstall
