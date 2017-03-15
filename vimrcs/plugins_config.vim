@@ -29,6 +29,7 @@ Plugin 'brookhong/DBGPavim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'yonchu/accelerated-smooth-scroll'
 Plugin 'ianva/vim-youdao-translater'
+Plugin 'WolfgangMehner/c-support'
 
 if has('mac')
 Plugin 'Valloric/YouCompleteMe'

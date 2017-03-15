@@ -1,3 +1,46 @@
 snippet debug "调试输出并暂停" b
 var_dump($${1:1});exit();
 endsnippet
+
+snippet edu_class "声明一个类" b
+<?php
+
+namespace ${1:`!p
+relpath = os.path.relpath(path)
+m = re.search(r'[A-Z].+(?=/)', relpath)
+if m:
+	snip.rv = m.group().replace('/', '\\')
+`};
+
+/**
+ * Class ${1:`!p snip.rv=snip.basename`}
+ *
+ * @author linan<linan@51cto.com>
+ */
+class $1
+{
+}
+endsnippet
+
+snippet modelcache "Model开启自动缓存需要覆盖的方法"
+/**
+ *缓存的KEY，一般是表主键
+*/
+function cachekey() {
+	return '${1:id}';     
+} 
+
+/**
+ *缓存时间
+*/
+function cachetime() {
+	return ${1:3600};     
+}
+
+/**
+* 是否开启自动缓存
+*/
+function cacheauto() {
+	return true;
+}
+endsnippet
