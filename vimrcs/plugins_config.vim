@@ -30,6 +30,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'yonchu/accelerated-smooth-scroll'
 Plugin 'ianva/vim-youdao-translater'
 Plugin 'WolfgangMehner/c-support'
+"https://github.com/fatih/vim-go-tutorial 使用指南
+Plugin 'fatih/vim-go'
 
 if has('mac')
 Plugin 'Valloric/YouCompleteMe'
