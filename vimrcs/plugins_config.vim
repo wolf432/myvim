@@ -7,6 +7,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'mattn/emmet-vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -32,6 +33,10 @@ Plugin 'ianva/vim-youdao-translater'
 Plugin 'WolfgangMehner/c-support'
 "https://github.com/fatih/vim-go-tutorial 使用指南
 Plugin 'fatih/vim-go'
+"自动缩进
+Plugin 'vim-scripts/indentpython.vim'
+"继承Git
+Plugin 'tpope/vim-fugitive'
 
 if has('mac')
 Plugin 'Valloric/YouCompleteMe'
