@@ -28,7 +28,6 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'brookhong/DBGPavim'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'yonchu/accelerated-smooth-scroll'
 Plugin 'ianva/vim-youdao-translater'
 Plugin 'WolfgangMehner/c-support'
 "https://github.com/fatih/vim-go-tutorial 使用指南
@@ -37,30 +36,10 @@ Plugin 'fatih/vim-go'
 Plugin 'vim-scripts/indentpython.vim'
 "继承Git
 Plugin 'tpope/vim-fugitive'
-
-if has('mac')
-Plugin 'Valloric/YouCompleteMe'
-endif
+"语法补全插件
+Plugin 'maralla/completor.vim'
 
 source ~/myvim/vimrcs/php.vim
-
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-nmap ne :NERDTreeToggle<CR>
-"按照文件扩展名显示不同的颜色
-function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
-    exec 'autocmd FileType nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
-    exec 'autocmd FileType nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
-endfunction
-
-call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
-call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
-call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
 let g:user_emmet_mode='a'   " 在所有模式下都能使用
 
@@ -77,13 +56,6 @@ let g:ctrlp_funky_matchtype = 'path'
 let g:ctrlp_funky_syntax_highlight = 1
 
 nmap tt :TagbarToggle<CR>
-
-let g:dash_map = ['java','php','js']
-
-"YCM
-if has("mac")
-    let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
-endif
 
 let g:UltiSnipsExpandTrigger="<c-l>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
