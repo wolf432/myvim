@@ -39,8 +39,6 @@ Plugin 'tpope/vim-fugitive'
 "语法补全插件
 Plugin 'maralla/completor.vim'
 
-source ~/myvim/vimrcs/php.vim
-
 let g:user_emmet_mode='a'   " 在所有模式下都能使用
 
 let g:airline#extensions#tabline#enabled = 1
