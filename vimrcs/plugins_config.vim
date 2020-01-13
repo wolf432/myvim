@@ -30,8 +30,6 @@ Plugin 'brookhong/DBGPavim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ianva/vim-youdao-translater'
 Plugin 'WolfgangMehner/c-support'
-"https://github.com/fatih/vim-go-tutorial 使用指南
-Plugin 'fatih/vim-go'
 "自动缩进
 Plugin 'vim-scripts/indentpython.vim'
 "继承Git
